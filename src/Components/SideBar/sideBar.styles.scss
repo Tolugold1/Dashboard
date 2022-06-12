@@ -1,0 +1,67 @@
+.toggle-button {
+   margin-left: 10px;
+   margin-bottom: 15px;
+}
+.nav-bar {
+   left: -280px;
+   padding: 10px;
+   height: 100vh;
+   max-width: 280px;
+   box-sizing: border-box;
+   position: relative;
+   transition: all 600ms ease-in;
+}
+.active {
+   font-size: 20px;
+   padding: 10px;
+   height: 100vh;
+   max-width: 280px;
+   box-sizing: border-box;
+   border-radius: 10px;
+   left: 0;
+   background-color: white;
+   position: relative;
+   transition: all 400ms ease-in-out;
+}
+.sidebar-text {
+   margin: 20px 0;
+   padding: 10px;
+}
+
+.sidebar-text:hover {
+   background-color: #11cdef;
+}
+Link a{
+   text-decoration: none;
+}
+
+.fa-television {
+   color: blue;
+   margin-right: 10px;
+}
+
+.fa-apple {
+   margin-right: 10px;
+   color: #5e72e4;
+}
+.fa-map-marker {
+   color: orange;
+   margin-right: 10px;
+}
+.fa-user {
+   margin-right: 10px;
+   color: yellow;
+}
+.fa-list-ul {
+   margin-right: 10px;
+   color: #fb6340;
+}
+.fa-space-shuttle {
+   color: #11cdef;
+   margin-right: 10px;
+}
+
+.fa-user-circle {
+   margin-right: 10px;
+   color: pink;
+}

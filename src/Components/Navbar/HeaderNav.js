@@ -1,13 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Nav, Navbar, Container, Form, FormGroup, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, InputGroup, InputGroupText, Media } from 'reactstrap';
 import './Navbar.styles.scss';
 
+
 const HeaderNav = () => {
    
+
    return(
       <Navbar expand='md'>
-         <Container className='header d-flex'>
-            <a href='/' className='d-none d-lg-block mr-auto mt-3 uppercase'>Dashboard</a>
+         <Container fluid className='header d-flex'>
+            
+            <a href='/' className='d-none d-lg-block mr-auto mt-3 uppercase navbar-brand'>Dashboard</a>
             <Form className='align-items-center' onSubmit={(e) => {e.preventDefault()}}>
                <FormGroup>
                   <InputGroup>
@@ -30,7 +33,7 @@ const HeaderNav = () => {
                         </Media>
                      </Media>
                   </DropdownToggle>
-                  <DropdownMenu style={{backgroundColor: 'lightwhite', margin: '5px', margin: '10px'}} end>
+                  <DropdownMenu style={{backgroundColor: 'lightwhite', margin: '5px'}} end>
                      <DropdownItem header tag='h4'> Welcome! </DropdownItem>
                      <DropdownItem className='mb-3'><i className='fa fa-user ' /> <span> My profile</span></DropdownItem>
                      <DropdownItem className='mb-3'><i className='fa fa-cog' /> <span> Settings</span></DropdownItem>
@@ -43,7 +46,6 @@ const HeaderNav = () => {
             </Nav>
          </Container>
       </Navbar>
-      
    )
 }
 

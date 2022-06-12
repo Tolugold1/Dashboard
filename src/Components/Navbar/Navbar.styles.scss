@@ -10,14 +10,10 @@ $border-zero: 0;
       color: black;
    }
    
-   a {
-      color: #212529;
-      text-decoration: none;
+   .navbar-brand {
       margin-right: auto;
    }
-   a:hover {
-      color: #f4f5f7;
-   }
+   
    .search {
       margin-right: 30px;
    }

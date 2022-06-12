@@ -1,5 +1,6 @@
 body {
   background-color: whitesmoke;
+  
 }
 
 .avatar {
@@ -11,4 +12,13 @@ body {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.nav-link, a {
+  color: #212529;
+  text-decoration: none;
+}
+
+.nav-link:hover, a:hover {
+  color: #f4f5f7;
 }
