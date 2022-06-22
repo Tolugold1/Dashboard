@@ -1,11 +1,9 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Nav, Navbar, Container, Form, FormGroup, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, InputGroup, InputGroupText, Media } from 'reactstrap';
 import './Navbar.styles.scss';
 
 
 const HeaderNav = () => {
-   
-
    return(
       <Navbar expand='md'>
          <Container fluid className='header d-flex'>
@@ -13,10 +11,8 @@ const HeaderNav = () => {
             <a href='/' className='d-none d-lg-block mr-auto mt-3 uppercase navbar-brand'>Dashboard</a>
             <Form className='align-items-center' onSubmit={(e) => {e.preventDefault()}}>
                <FormGroup>
-                  <InputGroup>
-                     <InputGroupText className='input-text'>
-                        <span className='fa fa-search'/>
-                     </InputGroupText>
+                  <InputGroup className='input-text'>
+                     <span className='fa fa-search'/>
                      <Input type="search" placeholder='Search' className='input-own-border'></Input>
                   </InputGroup>
                </FormGroup>
@@ -33,7 +29,7 @@ const HeaderNav = () => {
                         </Media>
                      </Media>
                   </DropdownToggle>
-                  <DropdownMenu style={{backgroundColor: 'lightwhite', margin: '5px'}} end>
+                  <DropdownMenu style={{backgroundColor: 'lightwhite', paddingRight: '70px', borderRadius: '10px'}} end>
                      <DropdownItem header tag='h4'> Welcome! </DropdownItem>
                      <DropdownItem className='mb-3'><i className='fa fa-user ' /> <span> My profile</span></DropdownItem>
                      <DropdownItem className='mb-3'><i className='fa fa-cog' /> <span> Settings</span></DropdownItem>

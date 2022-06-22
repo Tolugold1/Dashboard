@@ -4,6 +4,7 @@ $border-zero: 0;
 
    font-weight: bold;
    font-family: Open San;
+   position: relative;
 
    NavbarBrand {
       text-decoration: none;
@@ -19,16 +20,21 @@ $border-zero: 0;
    }
    
    .input-text {
-      background-color: white;
-      border: border-zero;
-      border-radius: 30px;
+      background-color: transparent;
+      border: 3px solid white;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      padding: 6px;
    }
    .input-own-border { 
-      border: border-zero;
+      background-color: transparent;
+      border: $border-zero;
       height: 60px;
       width: 350px;
       border-radius: 30px;
    }
+   
 
    .avatar {
       object-fit: cover;
