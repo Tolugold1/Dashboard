@@ -9,7 +9,7 @@ const SideHeader = () => {
 
    const showSideBar = () => setSideIsOpen(!sideIsOpen);
    return(
-      <div className="sidebars">
+      <div className="sidebars" expand='md'>
          <div className="toggle-button">
                <Button className="bt" onClick={showSideBar}><span className="fa fa-bars text-blue"></span></Button>
          </div>
