@@ -33,8 +33,18 @@ $border-zero: 0;
       height: 60px;
       width: 350px;
       border-radius: 30px;
+      outline: none;
    }
    
+   .notify {
+      margin-top: 15px;
+      margin-right: 15px;
+      display: flex;
+   }
+   .badge {
+      top: 5px;
+      right: 165px;
+   }
 
    .avatar {
       object-fit: cover;
@@ -54,6 +64,17 @@ $border-zero: 0;
       
       Form {
          margin-right: auto;
+      }
+
+      .badge {
+         top: 5px;
+         right: 100px;
+      }
+   
+   }
+   @media (max-width: 766px) {
+      .badge {
+         display:none
       }
    }
 }

@@ -1,12 +1,19 @@
 .HeaderComponent {
    .icons {
-      color: #2dce89;
       display: flex;
       align-items: center;
+
+      &.positive {
+         color: #2dce89;
+      }
+      &.negative {
+         color: orangered;
+      }
    }
-   .icon {
-      color: orangered;
+   
+   .avatar-icons {
       display: flex;
       align-items: center;
+      justify-content: center;
    }
 }
