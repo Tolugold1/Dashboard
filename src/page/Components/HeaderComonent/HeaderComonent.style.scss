@@ -1,19 +1,24 @@
-.HeaderComponent {
-   .icons {
-      display: flex;
-      align-items: center;
-
-      &.positive {
-         color: #2dce89;
-      }
-      &.negative {
-         color: orangered;
-      }
-   }
+.headbody {
+   background-image: linear-gradient(to right, #38d4ff, #4b88f1);
+   height: 400px;
+   .HeaderComponent {
+      
+      .icons {
+         display: flex;
+         align-items: center;
    
-   .avatar-icons {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+         &.positive {
+            color: #2dce89;
+         }
+         &.negative {
+            color: orangered;
+         }
+      }
+      
+      .avatar-icons {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
    }
 }
