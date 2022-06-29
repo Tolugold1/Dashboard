@@ -18,7 +18,7 @@ const Charts = () => {
                <AnimatedProgressProvider
                valueStart={0}
                valueEnd={70}
-               duration={2}
+               duration={1.5}
                easingMethod={easeQuadInOut}
                repeat
                >
