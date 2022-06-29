@@ -2,7 +2,8 @@ import React from 'react';
 import './home.style.scss';
 import SideHeader from '../Components/SideBar/SideBarHeader';
 import HeaderComponent from '../Components/HeaderComonent/HeaderComponent';
-
+import Charts from '../Components/chart/charts'
+import Features from '../Components/feature/features'
 
 export class HomePage extends React.Component {
 
@@ -11,8 +12,12 @@ export class HomePage extends React.Component {
       <div className="Home">
         <SideHeader />
         <div className='components'>
-          <div>
+          <div className='head'>
             <HeaderComponent />
+          </div>
+          <div className='H-chart'>
+            <Charts />
+            <Features />
           </div>
         </div>
       </div>
