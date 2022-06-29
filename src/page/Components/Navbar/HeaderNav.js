@@ -1,16 +1,17 @@
 import React, {useState} from 'react';
-import { Nav, Navbar, Container, Form, FormGroup, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, InputGroup, Button, Media } from 'reactstrap';
+import { Nav, Navbar, Container, Form, FormGroup, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, InputGroup, Media } from 'reactstrap';
 import './Navbar.styles.scss';
-import { MdNotificationsNone } from 'react-icons/md'
+import { MdNotificationsNone } from 'react-icons/md';
+
 
 
 const HeaderNav = () => {
-   
+
    return(
+
       <Navbar expand='md'>
          <Container fluid className='header d-flex'>
-            
-            <a href='/' className='d-none d-lg-block mr-auto mt-3 uppercase navbar-brand'>Dashboard</a>
+            <a href='/' className='d-none d-lg-block mr-auto mt-3 uppercase navbar-brand brand'>Dashboard</a>
             <Form className='align-items-center' onSubmit={(e) => {e.preventDefault()}}>
                <FormGroup>
                   <InputGroup className='input-text'>

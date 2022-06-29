@@ -1,8 +1,13 @@
 .toggle-button {
    margin-left: 10px;
-   margin-bottom: 15px;
+   margin-bottom: 20px;
    margin-top: 20px;
+   position: absolute;
+   z-index: 1000;
+   
 }
+
+
 .nav-bar {
    left: -300px;
    padding: 10px;
@@ -22,6 +27,7 @@
    background-color: white;
    position: relative;
    transition: all 400ms ease-in-out;
+   padding-top: 45px;
 }
 .sidebar-text {
    margin: 20px 0;

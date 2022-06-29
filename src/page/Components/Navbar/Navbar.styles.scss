@@ -5,10 +5,14 @@ $border-zero: 0;
    font-weight: bold;
    font-family: Open San;
    position: relative;
-
+   display: block;
    NavbarBrand {
       text-decoration: none;
       color: black;
+   }
+
+   NavbarToggler {
+      z-index: 1000;
    }
    
    .navbar-brand {
@@ -47,19 +51,40 @@ $border-zero: 0;
       border-radius: 50%;
       width: 50px;
       height: 50px;
-    }
+      }
 
-    Form {
-       margin-right: 30px;
-    }
-    .fa{
-       padding-right: 20px;
-    }
+      Form {
+         margin-right: 30px;
+      }
+      .fa{
+         padding-right: 20px;
+      }
+      .brand {
+         margin-left: 40px;
+      }
+   
+   @media (min-width: 992px) and (max-width: 1200px){
+      Form {
+         margin-right: 30px;
+         margin-top: 10px;
+
+         .input-own-border {
+            height: 40px;
+            width: 250px;
+         }
+      }
+   }
 
    @media (min-width: 768px) and (max-width: 991px) {
       
       Form {
          margin-right: auto;
+         margin-left: 50px;
+
+         .input-own-border {
+            height: 40px;
+            width: 250px;
+         }
       }
 
       .badge {
@@ -71,6 +96,15 @@ $border-zero: 0;
    @media (max-width: 766px) {
       .badge {
          display:none
+      }
+      Form {
+         margin-right: auto;
+         margin-left: 50px;
+
+         .input-own-border {
+            height: 40px;
+            width: 200px;
+         }
       }
    }
 }
