@@ -1,0 +1,20 @@
+.feature {
+
+   max-width: auto;
+   background-color: white;
+   box-shadow: -3px 8px 25px 3px rgba(0,0,0,0.57);
+   -webkit-box-shadow: -3px 8px 25px 3px rgba(0,0,0,0.57);
+   -moz-box-shadow: -3px 8px 25px 3px rgba(0,0,0,0.57);
+   padding: 30px;
+   border-radius: 20px;
+
+   .card-head {
+      background-color: white;
+   }
+   .chartBody {
+      padding: 60px;
+      border-radius: 20px;
+      stroke-width: 5px;
+      height: 300px;
+   }
+}
