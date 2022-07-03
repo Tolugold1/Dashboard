@@ -6,6 +6,7 @@ import Charts from '../Components/chart/charts'
 import Features from '../Components/feature/features';
 import { Row, Col } from 'reactstrap';
 import LineChartComponent from '../Components/lineChart/linechart';
+import TableComponent from '../Components/Table/table';
 
 export class HomePage extends React.Component {
 
@@ -23,6 +24,9 @@ export class HomePage extends React.Component {
           </Row>
           <div className='line-chart'>
               <LineChartComponent />
+          </div>
+          <div>
+            <TableComponent />
           </div>
         </div>
       </div>
