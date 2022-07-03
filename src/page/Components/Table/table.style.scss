@@ -16,7 +16,10 @@
          transition-property: all;
       }
       Button:hover {
-         transform: translate(0px, -5px);;
+         transform: translate(0px, -2px);
+         box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+         -webkit-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+         -moz-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
       }
    }
 
