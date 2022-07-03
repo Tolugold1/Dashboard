@@ -14,13 +14,13 @@ const Features = () => {
       }]
    })
    return (
-      <div className='feature'>
+      <div className='feature m-4'>
          <div className='card-head'>
             <h6 className='uppercase'>Performance</h6>
             <h2>Total orders</h2>
          </div>
          <div className='chartBody'>
-            <BarChart barData={data} size="300px" styles={{height: '300px', objectFit: "cover"}}/>
+            <BarChart barData={data} />
          </div>
       </div>
    )

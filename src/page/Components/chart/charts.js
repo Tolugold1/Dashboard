@@ -8,7 +8,7 @@ import AnimatedProgressProvider from '../chartAnimations/AnimatedProgressProvide
 
 const Charts = () => {
    return (
-      <div className='charts'>
+      <div className='charts m-4'>
          <div className='top'>
             <h1 className='title'>Total Revenue</h1>
             <MdMoreVert  fontSize="34px" />
@@ -28,6 +28,7 @@ const Charts = () => {
                      <CircularProgressbar 
                      value={value}
                      text={`${roundedValue}%`}
+                     strokeWidth='3'
                      styles={buildStyles({ pathTransition: "none"})}
                      />
                   )
