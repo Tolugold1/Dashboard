@@ -4,7 +4,7 @@ import SideHeader from '../Components/SideBar/SideBarHeader';
 import HeaderComponent from '../Components/HeaderComonent/HeaderComponent';
 import Charts from '../Components/chart/charts'
 import Features from '../Components/feature/features';
-import { Row, Col, Card, CardBody, CardHeader } from 'reactstrap';
+import { Row, Col } from 'reactstrap';
 import LineChartComponent from '../Components/lineChart/linechart';
 
 export class HomePage extends React.Component {
