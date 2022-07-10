@@ -1,9 +1,16 @@
-import React from 'react';
-import { Button, Table, Card, CardHeader, CardBody, Row, Col } from 'reactstrap';
+import React, { useState } from 'react';
+import { Button, Table, Card, CardHeader, CardBody, Row, Col, Tooltip, Progress } from 'reactstrap';
 import './table.style.scss';
 
 
 export const TableComponent = () => {
+
+   const [openTooltip, setOpenTooltip] = useState(false)
+   const [openTip, setOpenTip] = useState(false)
+
+   const toggleTip1 = () => setOpenTooltip(!openTooltip);
+   const toggleTip = () => setOpenTip(!openTip);
+
    return (
       <Row className='jumbotron d-flex'>
          <Col>
@@ -12,7 +19,8 @@ export const TableComponent = () => {
                   <div className='fst'>
                      <h5>Page visits</h5>
                   </div>
-                  <Button className='btn-small'>See all</Button>
+                  <Button className='btn-small' id='see-all'>See all</Button>
+                  <Tooltip placement='left' isOpen={openTooltip} target='see-all' toggle={toggleTip1}> click to see all</Tooltip>
                </CardHeader>
                <CardBody>
                   <Table>
@@ -66,7 +74,8 @@ export const TableComponent = () => {
                   <div className='fst'>
                      <h5>Social traffic</h5>
                   </div>
-                  <Button className='btn-small'>See all</Button>
+                  <Button className='btn-small' id="see-less">See all</Button>
+                  <Tooltip placement='left' isOpen={openTip} target='see-less' toggle={toggleTip}> click to see less</Tooltip>
                </CardHeader>
                <CardBody>
                   <div className='table-responsive-md'>
@@ -83,36 +92,28 @@ export const TableComponent = () => {
                               <th>Facebook</th>
                               <td>1,480</td>
                               <td className='bar'>60%
-                                 <div className='progress' style={{height: '2px'}}>
-                                    <div className='progress-bar bg-danger' style={{width: '60%'}}></div>
-                                 </div>
+                                 <Progress value={60} color='danger' style={{height: '2px'}}/>
                               </td>
                            </tr>
                            <tr>
                               <th>Github</th>
                               <td>1,480</td>
                               <td className='bar'>70%
-                                 <div className='progress' style={{height: '2px'}}>
-                                    <div className='progress-bar bg-success' style={{width: '70%'}}></div>
-                                 </div>
+                                 <Progress value={70} color='success' style={{height: '2px'}}/>
                               </td>
                            </tr>
                            <tr>
                               <th>WhatsApp</th>
                               <td>1,480</td>
                               <td className='bar'>80%
-                                 <div className='progress' style={{height: '2px'}}>
-                                    <div className='progress-bar bg-warning' style={{width: '80%'}}></div>
-                                 </div>
+                                 <Progress value={80} color='warning' style={{height: '2px'}}/>
                               </td>
                            </tr>
                            <tr>
                               <th>twitter</th>
                               <td>1,480</td>
-                              <td className='bar'>75%
-                                 <div className='progress' style={{height: '2px'}}>
-                                    <div className='progress-bar bg-success' style={{width: '75%'}}></div>
-                                 </div>
+                              <td className='bar'>95%
+                                 <Progress value={95} color="primary" style={{height: '2px'}}/>
                               </td>
                            </tr>
                            <tr>
@@ -121,11 +122,11 @@ export const TableComponent = () => {
                               <td className='bar'>
                                  <div className='table-data'>
                                     30%
-                                    <div className='progress' style={{height: '2px'}}>
-                                       <div className='progress-bar bg-danger' style={{width: '1%'}}></div>
-                                       <div className='progress-bar bg-warning' style={{width: '8%'}}></div>
-                                       <div className='progress-bar bg-warning' style={{width: '17%'}}></div>
-                                    </div>
+                                    <Progress multi style={{height: '2px'}}>
+                                       <Progress bar color='danger' value='2'/>
+                                       <Progress bar color='warning' value='13'/>
+                                       <Progress bar color='info' value='15' />
+                                    </Progress>
                                  </div>
                               </td>
                            </tr>
