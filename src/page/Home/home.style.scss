@@ -2,7 +2,8 @@
    display: flex;
 
    .components {
-      flex: 7;
+      flex: auto;
+      width:fit-content;
 
       .H-chart {
          display: flex;
