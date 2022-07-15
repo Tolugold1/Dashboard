@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './lineChart.styles.scss';
 import { LineData } from './lineData';
+import { LineData1 } from './lineData1';
+import LineChart1 from './LineChartFile1';
 import LineChart from './LineChartFile';
 import { Button, Card, CardBody, CardHeader } from 'reactstrap';
 import $ from "jquery";
@@ -20,9 +22,34 @@ const LineChartComponent = () => {
       }]
    })
 
-   const handleClick = () => {
+   const [line1, setLine1] = useState({
+      labels: LineData1.map((data1) => data1.month),
+      datasets: [{
+         label: "profit",
+         data: LineData1.map((data1) => data1.profit),
+         borderColor: '#5e72e4',
+         pointBackgroundColor: '#5e72e4',
+         tension: 0.3,
+         pointRadius: 1,
+         pointHitRadius: 1,
+         backgroundColor: '#172b4d'
+      }]
+   })
+
+   const [isOpen, setIsOpen] = useState();
+
+   const toggle = () => {
       $("Button").on("click", function(){
-         $(this).toggleClass("btn-active");
+         if ($(this).is(".A")) {
+            setIsOpen(true);
+         } else {
+            setIsOpen(false);
+         }
+         if ($(this).is(".B")) {
+            setIsOpen(false);
+         } else {
+            setIsOpen(true);
+         }
       });
    }
 
@@ -34,12 +61,12 @@ const LineChartComponent = () => {
                <h1 className='sales'>Sales value</h1>
             </div>
             <div className="M-W-btn">
-               <Button className='A' onClick={handleClick}>Month</Button>
-               <Button className='B' onClick={handleClick}>Week</Button>
+               <Button className='A' onClick={toggle}>Month</Button>
+               <Button className='B' onClick={toggle}>Week</Button>
             </div>
          </CardHeader>
          <CardBody>
-            <LineChart LineData={lines}/>
+            {isOpen ? <LineChart LineData={lines}/> : <LineChart1 LineData1={line1}/>}
          </CardBody>
       </Card>
    )
