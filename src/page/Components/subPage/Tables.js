@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Table, Card, CardHeader, CardBody, Row, Col, Tooltip, Progress } from 'reactstrap';
+import HeaderComponent from '../HeaderComonent/HeaderComponent';
 import SideHeader from '../SideBar/SideBarHeader';
 import './table.style.scss';
 
@@ -13,9 +14,11 @@ export const TableComponent = () => {
    const toggleTip = () => setOpenTip(!openTip);
 
    return (
+      <>
       <div className='Tables'>
          <SideHeader />
-         <div>
+         <div className='Table-components'>
+            <HeaderComponent />
             <Row className='jumbotron d-flex'>
                <Col>
                   <Card className='Table-component m-4'>
@@ -143,6 +146,7 @@ export const TableComponent = () => {
             </Row>
          </div>
       </div>
+      </>
 
   )
 }
