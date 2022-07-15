@@ -1,52 +1,54 @@
-export const Routes = [
+import HomePage from "../Home/HomePage";
+import Login from "../subPage/Login";
+import UserProfile from "../subPage/UserProfile";
+import Tables from "../subPage/Tables";
+import Register from "../subPage/Register";
+import Maps from "../subPage/Map";
+import Icons from "../subPage/Icon"
+export const Paths = [
   {
     
     name: "Dashboard",
     icon: "fa fa-television",
-    component: 'Index',
-    layout: "/admin",
+    layout: "/HomePage",
   },
   {
     
     name: "Icons",
     icon: "fa fa-apple text-blue",
-    component: 'Icons',
-    layout: "/admin",
+    layout: "/Icons",
   },
   {
     
     name: "Maps",
     icon: "fa fa-map-marker text-orange",
-    component: 'Maps',
-    layout: "/admin",
+    layout: "/Maps",
   },
   {
     
     name: "User Profile",
     icon: "fa fa-user text-yellow",
-    component: 'Profile',
-    layout: "/admin",
+    layout: "/UserProfile",
   },
   {
     
     name: "Tables",
     icon: "fa fa-list-ul text-red",
-    component: 'Tables',
-    layout: "/admin",
+    component: Tables,
+    layout: "/Tables",
   },
   {
     
     name: "Login",
     icon: "fa fa-space-shuttle text-info",
-    component: 'Login',
-    layout: "/auth",
+    component: Login,
+    layout: "/Login",
   },
   {
     
     name: "Register",
     icon: "fa fa-user-circle text-pink",
-    component: 'Register',
-    layout: "/auth",
+    component: Register,
+    layout: "/Register",
   },
 ];
- 
