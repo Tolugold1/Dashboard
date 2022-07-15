@@ -13,7 +13,7 @@ const SideHeader = () => {
       <div className="sidebars">
          <div className="toggle-button">
             <Button className="bt" onClick={showSideBar}><span className="fa fa-caret-square-o-left text-blue"></span></Button>
-         </div>      
+         </div>
          <div className={sideIsOpen ? "nav-bar": "active"}>
             <List type='unstyled'>
                <div className='align-items-center justify-content-center mb-5 d-flex pt-4'>

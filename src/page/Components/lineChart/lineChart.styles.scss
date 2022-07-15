@@ -11,4 +11,30 @@
    h6, h1 {
       color: white;
    }
+
+   .card-header {
+      display: flex;
+
+      .header-text {
+         margin-right: auto;
+      }
+      .M-W-btn {
+         
+         .A {
+            margin: 20px;
+            background-color: white;
+            color: #5e72e4;
+         }
+         .B {
+            background-color: white;
+            color: #5e72e4;
+         }
+
+         .btn-active {
+            background-color: #5e72e4 ;
+            margin: 20px;
+            color: white;
+         }
+      }
+   }
 }

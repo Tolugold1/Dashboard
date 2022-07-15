@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './lineChart.styles.scss';
 import { LineData } from './lineData';
 import LineChart from './LineChartFile';
-import { Card, CardBody, CardHeader } from 'reactstrap'
+import { Button, Card, CardBody, CardHeader } from 'reactstrap';
+import $ from "jquery";
 
 const LineChartComponent = () => {
    const [lines, setLines] = useState({
@@ -19,11 +20,31 @@ const LineChartComponent = () => {
       }]
    })
 
+   const handleClick = () => {
+      $("Button").on("click", function(){
+         
+         if ($(".B").hasClass("btn-active") && $(this).className("")) {
+            $(".B").removeClass("btn-active");
+            $(this).addClass("btn-active");
+         }
+         if ($(".A").hasClass("btn-active") && $(this).className("")) {
+            $(".A").removeClass("btn-active");
+            $(this).addClass("btn-active");
+         }
+      })
+   }
+
    return (
       <Card className='line-graph m-4'>
-         <CardHeader>
-            <h6 className='clr uppercase '>Overview</h6>
-            <h1 className='sales'>Sales value</h1>
+         <CardHeader className='card-header'>
+            <div className='header-text'>
+               <h6 className='clr uppercase '>Overview</h6>
+               <h1 className='sales'>Sales value</h1>
+            </div>
+            <div className="M-W-btn">
+               <Button className='A' onClick={handleClick}>Month</Button>
+               <Button className='B' onClick={handleClick}>Week</Button>
+            </div>
          </CardHeader>
          <CardBody>
             <LineChart LineData={lines}/>
