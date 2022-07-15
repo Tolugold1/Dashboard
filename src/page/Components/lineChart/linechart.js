@@ -22,16 +22,8 @@ const LineChartComponent = () => {
 
    const handleClick = () => {
       $("Button").on("click", function(){
-         
-         if ($(".B").hasClass("btn-active") && $(this).className("")) {
-            $(".B").removeClass("btn-active");
-            $(this).addClass("btn-active");
-         }
-         if ($(".A").hasClass("btn-active") && $(this).className("")) {
-            $(".A").removeClass("btn-active");
-            $(this).addClass("btn-active");
-         }
-      })
+         $(this).toggleClass("btn-active");
+      });
    }
 
    return (
@@ -50,7 +42,6 @@ const LineChartComponent = () => {
             <LineChart LineData={lines}/>
          </CardBody>
       </Card>
-      )
+   )
 }
-
 export default LineChartComponent;
