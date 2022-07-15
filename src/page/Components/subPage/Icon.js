@@ -24,10 +24,12 @@ const Icons = () => {
                      {Icons_Icons.map((icon, key) => {
                         return (
                            <Col sm='6' md='3' key={key}>
-                              <Toast>
+                              <Toast className="jumbotron toast-head mt-5">
                                  <ToastBody className="toast_icon">
-                                    {<icon.Icon/>}
-                                    <h2>{icon.name}</h2>
+                                    <div className="ts">
+                                       {<icon.Icon size={40}/>}
+                                       <h2 className="icon-name">{icon.name}</h2>
+                                    </div>
                                  </ToastBody>
                               </Toast>
                            </Col>

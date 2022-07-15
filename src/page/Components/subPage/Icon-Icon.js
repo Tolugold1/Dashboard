@@ -24,7 +24,7 @@ export const Icons_Icons = [
    {
       Id: 5,
       Icon: mi.MdAssignmentReturn,
-      name: "MdAssignmentReturn"
+      name: "MdAssReturn"
    },
    {
       Id: 6,
@@ -34,17 +34,17 @@ export const Icons_Icons = [
    {
       Id: 7,
       Icon: mi.MdArrowCircleUp,
-      name: "MdArrowCircleUp"
+      name: "ArrowCircleUp"
    },
    {
       Id: 8,
       Icon: mi.MdArrowRightAlt,
-      name: "MdArrowRightAlt"
+      name: "ArrowRightAlt"
    },
    {
       Id: 9,
       Icon: mi.MdAssignmentReturned,
-      name: "MdAssignmentReturned"
+      name: "AssReturned"
    },
    {
       Id: 10,
@@ -54,7 +54,7 @@ export const Icons_Icons = [
    {
       Id: 11,
       Icon: mi.MdBatchPrediction,
-      name: "MdBatchPrediction"
+      name: "BatchPrediction"
    },
    {
       Id: 12,
@@ -64,17 +64,17 @@ export const Icons_Icons = [
    {
       Id: 13,
       Icon: mi.MdCalendarViewDay,
-      name: "MdCalendarViewDay"
+      name: "CalendarViewDay"
    },
    {
       Id: 14,
       Icon: mi.MdCheckCircleOutline,
-      name: "MdCheckCircleOutline"
+      name: "CircleOutline"
    },
    {
       Id: 15,
       Icon: mi.MdCircleNotifications,
-      name: "MdCircleNotifications"
+      name: "Notifications"
    },
    {
       Id: 16,
@@ -84,7 +84,7 @@ export const Icons_Icons = [
    {
       Id: 17,
       Icon: mi.MdCreditCardOff,
-      name: "MdCreditCardOff"
+      name: "CreditCardOff"
    },
    {
       Id: 18,
@@ -94,7 +94,7 @@ export const Icons_Icons = [
    {
       Id: 19,
       Icon: mi.MdFingerprint,
-      name: "MdFingerprint"
+      name: "Fingerprint"
    },
    {
       Id: 20,
@@ -109,7 +109,7 @@ export const Icons_Icons = [
    {
       Id: 22,
       Icon: mi.MdHorizontalSplit,
-      name: "MdHorizontalSplit"
+      name: "HorizontalSplit"
    },
    {
       Id: 23,
@@ -129,27 +129,27 @@ export const Icons_Icons = [
    {
       Id: 26,
       Icon: mi.MdHourglassFull,
-      name: "MdHourglassFull"
+      name: "HourglassFull"
    },
    {
       Id: 27,
       Icon: mi.MdInvertColors,
-      name: "MdInvertColors"
+      name: "InvertColors"
    },
    {
       Id: 28,
       Icon: mi.MdLabelImportantOutline,
-      name: "MdLabelImportantOutline"
+      name: "ImportantOutline"
    },
    {
       Id: 29,
       Icon: mi.MdLabelImportant,
-      name: "MdLabelImportant"
+      name: "Important"
    },
    {
       Id: 30,
       Icon: mi.MdLabelOutline,
-      name: "MdLabelOutline"
+      name: "Outline"
    },
    {
       Id: 31,
@@ -179,7 +179,7 @@ export const Icons_Icons = [
    {
       Id: 36,
       Icon: mi.MdAssignmentReturn,
-      name: "MdAssignmentReturn"
+      name: "AssReturn"
    },
    {
       Id: 37,
@@ -204,7 +204,7 @@ export const Icons_Icons = [
    {
       Id: 41,
       Icon: mi.MdNightlightRound,
-      name: "MdNightlightRound"
+      name: "NightlightRound"
    },
    {
       Id: 42,

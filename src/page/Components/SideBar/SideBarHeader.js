@@ -3,6 +3,7 @@ import {Paths}  from './route';
 import './sideBar.styles.scss';
 import {Link} from 'react-router-dom';
 import { List, Button } from 'reactstrap';
+import Headroom from 'react-headroom';
 
 const SideHeader = () => {
    const [sideIsOpen, setSideIsOpen] = useState(false);

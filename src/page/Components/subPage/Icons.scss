@@ -10,22 +10,44 @@
       }
       .card1 {
          background-color: white;
-         margin-top: 0px;
+         margin-top: -250px;
          margin-left: 20px;
          margin-right: 20px;
-         border-radius: 30px;
+         border-radius: 20px;
 
          .card-header {
             background-color: white;
-            border-radius: 30px;
+            border-radius: 20px;
+            padding: 20px;
          }
 
-         .icon-toast {
+         .toast-head {
 
-            Col {
-               padding: 0;
+            background-color: #f4f5f7;
+            padding: 10px;
+            border: none;
+            .toast_icon {
+            
+               .ts {
+                  margin-left: 10px;
+                  display: flex;
+                  align-items: center;
+                  position: relative;
+   
+                  .icon-name {
+                     margin-left: 10px;
+                  }
+               }
             }
          }
+
+         .toast-head:hover {
+            background-color: #fff;
+            box-shadow: -3px 8px 25px 3px rgba(0,0,0,0.57);
+            -webkit-box-shadow: -3px 8px 25px 3px rgba(0,0,0,0.57);
+            -moz-box-shadow: -3px 8px 25px 3px rgba(0,0,0,0.57);
+         }
+         
       }
    }
 }
