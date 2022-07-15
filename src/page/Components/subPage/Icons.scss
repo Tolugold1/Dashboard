@@ -1,0 +1,31 @@
+.Icons {
+   display: flex;
+
+   .Icons-body {
+      flex: 7;
+
+      .card {
+         position: absolute;
+         min-width: auto;
+      }
+      .card1 {
+         background-color: white;
+         margin-top: 0px;
+         margin-left: 20px;
+         margin-right: 20px;
+         border-radius: 30px;
+
+         .card-header {
+            background-color: white;
+            border-radius: 30px;
+         }
+
+         .icon-toast {
+
+            Col {
+               padding: 0;
+            }
+         }
+      }
+   }
+}
