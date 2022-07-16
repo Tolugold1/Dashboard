@@ -1,0 +1,16 @@
+.map-component {
+   display: flex;
+
+   .map-body {
+      flex: 7;
+
+      .map-card1 {
+         width: 1200px;
+         height: 800px;
+         border-radius: 20px;
+         margin-right: 20px;
+         margin-left: 100PX;
+         margin-top: -200px;
+      }
+   }
+}
