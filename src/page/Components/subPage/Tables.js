@@ -393,7 +393,7 @@ export const TableComponent = () => {
                                  </td>
                                  <td>
                                     <Dropdown direction="down" isOpen={dropDown5} toggle={drop5}>
-                                       <DropdownToggle className='dropdown-btn' onClick={drop5}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
+                                       <DropdownToggle className='dropdown-btn1' onClick={drop5}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
                                        <DropdownMenu className='Drop1'>
                                           <DropdownItem className='Drop'>Action</DropdownItem>
                                           <DropdownItem className='Drop'>Contact</DropdownItem>
@@ -452,7 +452,7 @@ export const TableComponent = () => {
                                  </td>
                                  <td>
                                     <Dropdown direction="down" isOpen={dropDown6} toggle={drop6}>
-                                       <DropdownToggle className='dropdown-btn' onClick={drop6}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
+                                       <DropdownToggle className='dropdown-btn1' onClick={drop6}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
                                        <DropdownMenu className='Drop6'>
                                           <DropdownItem className='Drop'>Action</DropdownItem>
                                           <DropdownItem className='Drop'>Contact</DropdownItem>
@@ -511,7 +511,7 @@ export const TableComponent = () => {
                                  </td>
                                  <td>
                                     <Dropdown direction="down" isOpen={dropDown7} toggle={drop7}>
-                                       <DropdownToggle className='dropdown-btn' onClick={drop7}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
+                                       <DropdownToggle className='dropdown-btn1' onClick={drop7}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
                                        <DropdownMenu className='Drop3'>
                                           <DropdownItem className='Drop'>Action</DropdownItem>
                                           <DropdownItem className='Drop'>Contact</DropdownItem>
@@ -570,7 +570,7 @@ export const TableComponent = () => {
                                  </td>
                                  <td>
                                     <Dropdown direction="down" isOpen={dropDown8} toggle={drop8}>
-                                       <DropdownToggle className='dropdown-btn' onClick={drop8}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
+                                       <DropdownToggle className='dropdown-btn1' onClick={drop8}><IoEllipsisVertical style={{color:"#0480ad"}}/></DropdownToggle>
                                        <DropdownMenu className='Drop4'>
                                           <DropdownItem className='Drop'>Action</DropdownItem>
                                           <DropdownItem className='Drop'>Contact</DropdownItem>

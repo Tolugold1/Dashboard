@@ -253,14 +253,14 @@
                }
             }
 
-            .dropdown-btn {
-               background-color: white;
+            .dropdown-btn1 {
+               background-color: #04103b;
                border: 0;
             }
-            .dropdown-btn:hover {
-               box-shadow: 0px 2px 16px 9px rgba(0,0,0,0.15);
-               -webkit-box-shadow: 0px 2px 16px 9px rgba(0,0,0,0.15);
-               -moz-box-shadow: 0px 2px 16px 9px rgba(0,0,0,0.15);
+            .dropdown-btn1:hover {
+               box-shadow: 0px 2px 16px 13px rgba(251,99,64,0.51);
+               -webkit-box-shadow: 0px 2px 16px 13px rgba(251,99,64,0.51);
+               -moz-box-shadow: 0px 2px 16px 13px rgba(251,99,64,0.51);
             }
             
             .Drop1 {
@@ -311,6 +311,4 @@
          }
       }
    }
-
-   
 }
