@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Nav, Navbar, Container, Form, FormGroup, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, InputGroup } from 'reactstrap';
+import { Link } from "react-router-dom"
 import './Navbar.styles.scss';
 import { MdNotificationsNone } from 'react-icons/md';
 
@@ -40,13 +41,13 @@ const HeaderNav = () => {
                      </div>
                   </DropdownToggle>
                   <DropdownMenu style={{backgroundColor: 'lightwhite', paddingRight: '70px', borderRadius: '10px'}} end>
-                     <DropdownItem header tag='h4'> Welcome! </DropdownItem>
-                     <DropdownItem className='mb-3'><i className='fa fa-user ' /> <span> My profile</span></DropdownItem>
-                     <DropdownItem className='mb-3'><i className='fa fa-cog' /> <span> Settings</span></DropdownItem>
+                     <DropdownItem header tag='h4'>Welcome!</DropdownItem>
+                     <DropdownItem className='mb-3'><Link to="/UserProfile"><i className='fa fa-user ' /> <span> My profile </span></Link></DropdownItem>
+                     <DropdownItem className='mb-3'><i className='fa fa-cog' /> <span> Settings </span></DropdownItem>
                      <DropdownItem className='mb-3'><i className='fa fa-calendar' /> <span> Activity</span></DropdownItem>
                      <DropdownItem className='mb-3'><i className='fa fa-life-ring' /> <span> support</span></DropdownItem>
                      <DropdownItem divider/>
-                     <DropdownItem href='#' className='mb-3'><i className='fa fa-sign-out' onClick={(e) => {e.preventDefault()}}/> <span> Logout</span></DropdownItem>
+                     <DropdownItem href='#' className='mb-3' onClick={(e) => {e.preventDefault()}}><i className='fa fa-sign-out'/> <span> Logout</span></DropdownItem>
                   </DropdownMenu>
                </UncontrolledDropdown>
             </Nav>

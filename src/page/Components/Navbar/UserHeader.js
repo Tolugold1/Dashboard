@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Navbar, Nav, Dropdown, DropdownItem, DropdownMenu, NavbarBrand, Container, Form, 
 FormGroup, InputGroup, Input, DropdownToggle, Media } from "reactstrap";
+import { Link } from "react-router-dom";
 import { RiSearchLine } from "react-icons/ri";
+import { FaUser, FaCog, FaCalendarAlt, FaLifeRing, FaSignOutAlt } from "react-icons/fa";
 import "./UserHeader.styles.scss";
 
 const UserHeader = () => {
+
+   const [ dropItDown, setDropItDown ] = useState(false);
+
+   const toggle = () => setDropItDown( !dropItDown );
    return (
       <div className="User-Header">
          <Navbar light >
@@ -20,7 +26,7 @@ const UserHeader = () => {
                </Form>
 
                <Nav className="profile" navbar>
-                  <Dropdown className="drop-down">
+                  <Dropdown className="drop-down" isOpen={ dropItDown } toggle={ toggle }>
                      <DropdownToggle nav>
                         <div className="media">
                            <div>
@@ -31,10 +37,18 @@ const UserHeader = () => {
                            </div>
                         </div>
                      </DropdownToggle>
+                     <DropdownMenu className="drop-menu" end>
+                        <Link to="/"><DropdownItem className="drop-item"> Welcome!</DropdownItem></Link>
+                        <Link to="#"><DropdownItem className="drop-item"> <FaUser className="drop-item-icon"/> <span> My profile </span></DropdownItem></Link>
+                        <Link to="#"><DropdownItem className="drop-item"><FaCog className="drop-item-icon"/><span> Settings </span></DropdownItem></Link>
+                        <Link to="#"><DropdownItem className="drop-item"><FaCalendarAlt className="drop-item-icon"/><span> Activity</span></DropdownItem></Link>
+                        <Link to="#"><DropdownItem className="drop-item"><FaLifeRing className="drop-item-menu"/><span> support</span></DropdownItem></Link>
+                        <DropdownItem className="drop-item" divider/>
+                        <Link to="/"><DropdownItem className="drop-item" onClick={(e) => {e.preventDefault()}}><FaSignOutAlt className="drop-item-icon" /> <span> Logout</span></DropdownItem></Link>
+                     </DropdownMenu>
                   </Dropdown>
                </Nav>
             </Container>
-
          </Navbar>
       </div>
    )
