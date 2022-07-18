@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import SideBarHeader from '../SideBar/SideBarHeader';
 import HeaderComponent from "../HeaderComonent/HeaderComponent";
 import { Card, CardBody } from "reactstrap";
@@ -9,9 +9,23 @@ import GoogleMapReact from "google-map-react";
 
 const Maps = () => {
 
+   const [fix, setFix] = useState(false);
+
+   const fixedTop = () => {
+      if (window.screenY >= 0) {
+         setFix(true);
+      } else {
+         setFix(false);
+      }
+   }
+
+   window.addEventListener("scroll", fixedTop);
+
    return(
       <div className="map-component">
-         <SideBarHeader />
+         <aside className={fix ? "side fixed" : "side"}>
+            <SideBarHeader />
+         </aside>
          <div className="map-body">
             <div className="head">
                <HeaderComponent />

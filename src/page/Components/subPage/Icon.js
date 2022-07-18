@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import HeaderComponent from '../HeaderComonent/HeaderComponent';
 import SideBarHeader from "../SideBar/SideBarHeader";
-import { Card, CardHeader, CardBody, Toast, ToastBody, Row, Col, CardDeck } from "reactstrap";
+import { Card, CardHeader, CardBody, Toast, ToastBody, Row, Col, Container } from "reactstrap";
 import "./Icons.scss";
 import { Icons_Icons } from "./Icon-Icon";
 
 
 const Icons = () => {
+
+   const [fix, setFix] = useState(false);
+
+   const fixedTop = () => {
+      if (window.screenY >= 0) {
+         setFix(true);
+      } else {
+         setFix(false);
+      }
+   }
+
+  window.addEventListener("scroll", fixedTop);
+
+  
    return(
-      <div className="Icons">
-         <SideBarHeader />
+      <Container fluid className="Icons">
+         <aside className={fix ? "side fixed" : "side"}>
+            <SideBarHeader />
+         </aside>
          <div className="Icons-body">
             <div className="head">
                <HeaderComponent />
@@ -40,7 +56,7 @@ const Icons = () => {
             </Card>
          </div>
          <Outlet/>
-      </div>
+      </Container>
    )
 }
 

@@ -9,6 +9,18 @@ import $ from "jquery";
 
 export const TableComponent = () => {
 
+   const [fix, setFix] = useState(false);
+
+   const fixedTop = () => {
+      if (window.screenY >= 0) {
+         setFix(true);
+      } else {
+         setFix(false);
+      }
+   }
+
+   window.addEventListener("scroll", fixedTop);
+
    const [openTooltip, setOpenTooltip] = useState(false);
    const [dropDown1, setDropDown1] = useState(false);
    const [dropDown2, setDropDown2] = useState(false);
@@ -50,7 +62,9 @@ export const TableComponent = () => {
    return (
       <>
       <div className='Tables'>
-         <SideHeader />
+         <aside className={fix ? "side fixed" : "side"}>
+            <SideHeader />
+         </aside>
          <div className='Table-components'>
             <HeaderComponent />
             <Row className='jumbotron d-flex'>

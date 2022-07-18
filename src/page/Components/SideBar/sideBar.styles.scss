@@ -1,72 +1,70 @@
-.toggle-button {
-   margin-left: 20px;
-   margin-bottom: 20px;
-   margin-top: 20px;
-   position: absolute;
-   z-index: 1000;
-   
-}
-
-.nav-bar {
-   left: -300px;
-   padding: 10px;
-   height: 100vh;
-   max-width: 280px;
-   box-sizing: border-box;
-   position: absolute;
-}
-.active {
-   font-size: 20px;
-   padding: 20px;
-   height: 100vh;
-   max-width: 300px;
-   box-sizing: border-box;
-   border-radius: 10px;
-   left: 0;
+.sidebars {
    background-color: white;
-   position: relative;
-   transition: all ease-in-out;
-   padding-top: 45px;
-}
-.sidebar-text {
-   margin: 20px 0;
-   padding: 10px;
-}
+   position: absolute;
 
-.sidebar-text:hover {
-   background-color: #11cdef;
-}
-Link a{
-   text-decoration: none;
-}
-
-.fa-television {
-   color: blue;
-   margin-right: 10px;
-}
-
-.fa-apple {
-   margin-right: 10px;
-   color: #5e72e4;
-}
-.fa-map-marker {
-   color: orange;
-   margin-right: 10px;
-}
-.text-yellow {
-   margin-right: 10px;
-   color: yellow;
-}
-.fa-list-ul {
-   margin-right: 10px;
-   color: #fb6340;
-}
-.fa-space-shuttle {
-   color: #11cdef;
-   margin-right: 10px;
-}
-
-.fa-user-circle {
-   margin-right: 10px;
-   color: pink;
+   .toggle-button {
+      margin-left: 20px;
+      margin-bottom: 5px;
+      margin-top: 20px;
+      position:relative;
+      z-index: 1000;
+      max-width: 60px;
+   }
+   
+   .active {
+      font-size: 20px;
+      padding: 20px;
+      height: 100vh;
+      max-width: 300px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      left: 0;
+      background-color: white;
+      position: relative;
+      transition: all ease-in-out;
+      padding-top: 15px;
+      z-index: 1000;
+   }
+   .sidebar-text {
+      margin: 20px 0;
+      padding: 10px;
+   }
+   
+   .sidebar-text:hover {
+      background-color: #11cdef;
+   }
+   Link a{
+      text-decoration: none;
+   }
+   
+   .fa-television {
+      color: blue;
+      margin-right: 10px;
+   }
+   
+   .fa-apple {
+      margin-right: 10px;
+      color: #5e72e4;
+   }
+   .fa-map-marker {
+      color: orange;
+      margin-right: 10px;
+   }
+   .text-yellow {
+      margin-right: 10px;
+      color: yellow;
+   }
+   .fa-list-ul {
+      margin-right: 10px;
+      color: #fb6340;
+   }
+   .fa-space-shuttle {
+      color: #11cdef;
+      margin-right: 10px;
+   }
+   
+   .fa-user-circle {
+      margin-right: 10px;
+      color: pink;
+   }
 }

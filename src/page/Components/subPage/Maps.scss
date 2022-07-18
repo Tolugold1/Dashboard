@@ -3,14 +3,48 @@
 
    .map-body {
       flex: 7;
+      margin-left: 205px;
 
       .map-card1 {
          width: 1200px;
-         height: 800px;
+         height: 1200px;
          border-radius: 20px;
          margin-right: 20px;
-         margin-left: 100PX;
+         margin-left: 40PX;
          margin-top: -200px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1200px) {
+         .map-card1 {
+            width: 850px;
+            height: 850px;
+            border-radius: 20px;
+            margin-right: 20px;
+            margin-left: 40PX;
+            margin-top: -200px;
+         }
+      }
+
+      @media (min-width: 768px) and (max-width: 991px) {
+         .map-card1 {
+            width: 650px;
+            height: 650px;
+            border-radius: 20px;
+            margin-right: 20px;
+            margin-left: 40PX;
+            margin-top: -130px;
+         }
+      }
+
+      @media (max-width: 767px) {
+         .map-card1 {
+            width: 400px;
+            height: 400px;
+            border-radius: 20px;
+            margin-right: 20px;
+            margin-left: 40PX;
+            margin-top: -200px;
+         }
       }
    }
 }

@@ -21,3 +21,13 @@ body {
 .nav-link:hover, a:hover {
   color: #c4bfbe;
 }
+
+.side {
+  position: relative;
+}
+
+.side.fixed {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+}

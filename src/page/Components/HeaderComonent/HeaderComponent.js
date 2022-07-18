@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card, CardBody, Row, Col, CardTitle } from 'reactstrap';
+import { Card, CardBody, Row, Col, CardTitle, Container } from 'reactstrap';
 import * as faIcons from 'react-icons/fa';
 import './HeaderComonent.style.scss';
 import HeaderNav from '../Navbar/HeaderNav';
@@ -10,7 +10,7 @@ export default class HeaderComponent extends Component {
   render() {
    return (
       <>
-      <div className='headbody'>
+      <Container fluid className='headbody'>
          <Headroom>
             <HeaderNav />
          </Headroom>
@@ -127,7 +127,7 @@ export default class HeaderComponent extends Component {
                </Col>
             </Row>
          </div>
-      </div>
+      </Container>
       </>
       
    )

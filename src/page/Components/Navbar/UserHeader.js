@@ -14,9 +14,9 @@ const UserHeader = () => {
    return (
       <div className="User-Header">
          <Navbar light >
-            <Container className="header-container">
+            <Container fluid className="header-container">
                <a className="nav-brand uppercase" href="/">User Profile</a>
-               <Form className="mt-3" onClick={(e) => e.preventDefault()}>
+               <Form className="mt-2 search-input" onClick={(e) => e.preventDefault()}>
                   <FormGroup className="form-group">
                      <InputGroup className="search-text-group">
                         <RiSearchLine className="search-icon"/>
