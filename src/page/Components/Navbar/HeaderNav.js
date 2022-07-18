@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Nav, Navbar, Container, Form, FormGroup, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, InputGroup, Media } from 'reactstrap';
+import { Nav, Navbar, Container, Form, FormGroup, Input, DropdownToggle, DropdownMenu, DropdownItem, UncontrolledDropdown, InputGroup } from 'reactstrap';
 import './Navbar.styles.scss';
 import { MdNotificationsNone } from 'react-icons/md';
 
@@ -30,14 +30,14 @@ const HeaderNav = () => {
             <Nav navbar>
                <UncontrolledDropdown>
                   <DropdownToggle nav>
-                     <Media className='align-items-center d-flex'>
-                        <Media left middle href='#'>
-                           <Media object src='assets/IMG_20220515_094908_775.jpg' className='avatar mr-3' alt='...'/>
-                        </Media>
-                        <Media body className='d-none d-lg-block'> 
+                     <div className='align-items-center d-flex'>
+                        <div>
+                           <img src='assets/IMG_20220515_094908_775.jpg' className='avatar mr-3' alt='...'/>
+                        </div>
+                        <div className='ml-5 d-none d-lg-block'> 
                            Tolu Gold
-                        </Media>
-                     </Media>
+                        </div>
+                     </div>
                   </DropdownToggle>
                   <DropdownMenu style={{backgroundColor: 'lightwhite', paddingRight: '70px', borderRadius: '10px'}} end>
                      <DropdownItem header tag='h4'> Welcome! </DropdownItem>

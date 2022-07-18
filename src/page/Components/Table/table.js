@@ -69,7 +69,7 @@ export const TableComponent = () => {
             </Card>
          </Col>
          <Col>
-            <Card className='Table-component mt-4'>
+            <Card className='Table-component mt-4 mr-5'>
                <CardHeader className='header'>
                   <div className='fst'>
                      <h5>Social traffic</h5>

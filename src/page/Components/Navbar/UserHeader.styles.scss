@@ -1,0 +1,51 @@
+.User-Header {
+
+   .header-container {
+
+      display: flex;
+      align-items: center;
+      .nav-brand {
+         margin-right: auto;
+      }
+      .form-group {
+         display: flex;
+         align-items: center;
+   
+         .form-control {
+            background-color: transparent;
+         }
+         .search-text-group {
+            display: flex;
+            border: 0;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 30px;
+            padding: 6px;
+         }
+   
+         .search-icon {
+            margin-right: 7px;
+         }
+         .search {
+            width: 350px;
+            outline: none;
+            border: 0;
+            border-radius: 20px;
+         }
+      }
+
+      .profile {
+         margin-left: 30px;
+
+         .media {
+            display: flex;
+            align-items: center;
+
+            .img-name {
+               margin-left: 7px;
+            }
+         }
+      }
+   }
+   
+}
