@@ -5,12 +5,6 @@ import {Link} from 'react-router-dom';
 import { List, Button } from 'reactstrap';
 
 const SideHeader = () => {
-   const [sideIsOpen, setSideIsOpen] = useState(false);
-
-   const showSideBar = () => {
-      setSideIsOpen(!sideIsOpen);
-   };
-
 
    return(
          

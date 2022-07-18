@@ -3,7 +3,6 @@ import { Card, CardBody, Row, Col, CardTitle, Container } from 'reactstrap';
 import * as faIcons from 'react-icons/fa';
 import './HeaderComonent.style.scss';
 import HeaderNav from '../Navbar/HeaderNav';
-import Headroom from 'react-headroom';
 
 export default class HeaderComponent extends Component {
   
@@ -11,9 +10,7 @@ export default class HeaderComponent extends Component {
    return (
       <>
       <Container fluid className='headbody'>
-         <Headroom>
-            <HeaderNav />
-         </Headroom>
+         <HeaderNav />
          <div className='HeaderComponent m-4'>
             {/* cards */}
             <Row>

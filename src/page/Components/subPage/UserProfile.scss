@@ -1,8 +1,76 @@
 .User-profile {
    display: flex;
+   height: 600px;
+   background: linear-gradient(to bottom right, hsla(200, 63%, 60%, 0.94), hsla(180, 33%, 81%, 0.75), hsla(248, 34%, 45%, 0.85)),
+               url(./table-avatar/IMG_20220703_080504_010.jpg)no-repeat center center / cover;
 
    .user-profile-body {
       flex: 7;
-      margin-left: 205px;
+      margin-left: 300px;
+
+      .back-img {
+         object-fit: cover;
+      }
+
+      .user-info {
+         margin-left: 20px;
+         height: 400px;
+         align-items: center;
+         display: flex;
+         
+         .greeting-text {
+            font-weight: bold;
+            color: white;
+            margin-bottom: 20px;
+            font-size: 3rem;
+
+         }
+         .greeting-text::first-letter {
+            font-size: 7rem;
+         }
+         .text {
+            font-size: 23px;
+            color: white;
+         }
+         .text::first-letter {
+            font-size: 2em;
+         }
+
+         .edit-profile-btn {
+            background-color: #fb6340;
+            border-radius: 10px;
+            border: 0;
+         }
+
+         .edit-profile-btn:hover {
+            transform: translate(0px, -2px);
+         }
+
+         @media (min-width: 1200px) {
+
+         }
+      
+         @media (min-width: 998px) and (max-width: 1200px) {
+      
+         }
+      
+         @media (min-width: 768px) and (max-width: 997px) {
+            .greeting-text {
+               font-weight: bold;
+               color: white;
+               margin-bottom: 10px;
+               font-size: 1em;
+      
+            }
+            .greeting-text::first-letter {
+               font-size: 4rem;
+            }
+         }
+      
+         @media (max-width: 767px) {
+      
+            
+         }
+      }
    }
 }

@@ -23,7 +23,7 @@ const Icons = () => {
 
   
    return(
-      <Container fluid className="Icons">
+      <div fluid className="Icons">
          <aside className={fix ? "side fixed" : "side"}>
             <SideBarHeader />
          </aside>
@@ -56,7 +56,7 @@ const Icons = () => {
             </Card>
          </div>
          <Outlet/>
-      </Container>
+      </div>
    )
 }
 

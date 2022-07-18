@@ -16,7 +16,7 @@ const UserHeader = () => {
          <Navbar light >
             <Container fluid className="header-container">
                <a className="nav-brand uppercase" href="/">User Profile</a>
-               <Form className="mt-2 search-input" onClick={(e) => e.preventDefault()}>
+               <Form className="mt-2 search-input">
                   <FormGroup className="form-group">
                      <InputGroup className="search-text-group">
                         <RiSearchLine className="search-icon"/>

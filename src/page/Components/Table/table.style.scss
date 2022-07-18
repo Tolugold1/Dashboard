@@ -1,115 +1,102 @@
-.Tables {
-
-   display: flex;
-   
-
-   .Table-components {
-      
-      flex: 7;
-      margin-left: 205px;
-      
-
-      .Table-component {
+.Table-component {
          
-         background-color: #ffffff;
-         .header {
-            display: flex;
-            background-color: white;
-            padding: 20px;
-      
-            .fst {
-               margin-right: auto;
-            }
-      
-            Button {
-               background-color: #5e72e4;
-               border: 0px;
-               border-radius: 10px;
-               transition-property: all;
-            }
-            Button:hover {
-               transform: translate(0px, -2px);
-               box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
-               -webkit-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
-               -moz-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
-            }
-         }
-      
-         .card-body {
-      
-            padding: 0px;
-      
-            .table {
-               
-               tbody, td, tfoot, th, thead, tr  {
-                  border-style: none;
-                  padding: 15px;
-               }
-         
-               thead {
-                  background-color: #f4f5f7;
-                  border-spacing: 0px;
-                  color: rgb(183, 195, 205);
-               }
-      
-               tr {
-                  border-bottom: 1.5px solid #f4f5f7;
-               }
-            }
-         }
-      
-         
+   background-color: #ffffff;
+   .header {
+      display: flex;
+      background-color: white;
+      padding: 20px;
+
+      .fst {
+         margin-right: auto;
       }
-      
-      .Table-component {
-      
-         background-color: #ffffff;
-         margin-top: 20px;
-         margin-left: 5px;
-         .header {
-            display: flex;
-            background-color: white;
-            padding: 20px;
-      
-            .fst {
-               margin-right: auto;
-            }
-      
-            Button {
-               background-color: #5e72e4;
-               border: 0px;
-               border-radius: 10px;
-               transition-property: all;
-            }
-            Button:hover {
-               transform: translate(0px, -2px);
-               box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
-               -webkit-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
-               -moz-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
-            }
-         }
-      
-         .card-body {
-      
-            padding: 0px;
-      
-            .table {
-               
-               tbody, td, tfoot, th, thead, tr  {
-                  border-style: none;
-                  padding: 15px;
-               }
+
+      Button {
+         background-color: #5e72e4;
+         border: 0px;
+         border-radius: 10px;
+         transition-property: all;
+      }
+      Button:hover {
+         transform: translate(0px, -2px);
+         box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+         -webkit-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+         -moz-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+      }
+   }
+
+   .card-body {
+
+      padding: 0px;
+
+      .table {
          
-               thead {
-                  background-color: #f4f5f7;
-                  border-spacing: 0px;
-                  color: rgb(183, 195, 205);
-               }
-      
-               tr {
-                  border-bottom: 1.5px solid #f4f5f7;
-               }
-            }
+         tbody, td, tfoot, th, thead, tr  {
+            border-style: none;
+            padding: 15px;
+         }
+   
+         thead {
+            background-color: #f4f5f7;
+            border-spacing: 0px;
+            color: rgb(183, 195, 205);
+         }
+
+         tr {
+            border-bottom: 1.5px solid #f4f5f7;
+         }
+      }
+   }
+
+   
+}
+
+.Table-component {
+
+   background-color: #ffffff;
+   margin-top: 20px;
+   margin-left: 5px;
+   .header {
+      display: flex;
+      background-color: white;
+      padding: 20px;
+
+      .fst {
+         margin-right: auto;
+      }
+
+      Button {
+         background-color: #5e72e4;
+         border: 0px;
+         border-radius: 10px;
+         transition-property: all;
+      }
+      Button:hover {
+         transform: translate(0px, -2px);
+         box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+         -webkit-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+         -moz-box-shadow: 3px 7px 11px -5px rgba(0,0,0,0.65);
+      }
+   }
+
+   .card-body {
+
+      padding: 0px;
+
+      .table {
+         
+         tbody, td, tfoot, th, thead, tr  {
+            border-style: none;
+            padding: 15px;
+         }
+   
+         thead {
+            background-color: #f4f5f7;
+            border-spacing: 0px;
+            color: rgb(183, 195, 205);
+         }
+
+         tr {
+            border-bottom: 1.5px solid #f4f5f7;
          }
       }
    }

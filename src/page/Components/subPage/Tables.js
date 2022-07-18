@@ -3,8 +3,7 @@ import { Button, Table, Card, CardHeader, CardBody, Row, Col, Tooltip, Progress,
 import HeaderComponent from '../HeaderComonent/HeaderComponent';
 import { IoEllipsisVertical } from 'react-icons/io5'
 import SideHeader from '../SideBar/SideBarHeader';
-import './table.style.scss';
-import $ from "jquery";
+import './table.style1.scss';
 
 
 export const TableComponent = () => {
@@ -61,11 +60,11 @@ export const TableComponent = () => {
 
    return (
       <>
-      <div className='Tables'>
+      <div className='Table1'>
          <aside className={fix ? "side fixed" : "side"}>
             <SideHeader />
          </aside>
-         <div className='Table-components'>
+         <div className='Table-components1'>
             <HeaderComponent />
             <Row className='jumbotron d-flex'>
                <Col>
