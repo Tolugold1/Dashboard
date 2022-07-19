@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import SideBarHeader from "../SideBar/SideBarHeader";
 import UserHeader from "../Navbar/UserHeader";
 import "./UserProfile.scss";
-import { Row, Col, Button, Card, CardBody, CardHeader } from "reactstrap";
-import { Link } from "react-router-dom";
+import { Row, Col, Button, Card, CardBody, CardHeader, CardTitle, Form, FormGroup, Label, Input } from "reactstrap";
+import { Country } from "./Countries";
+import { NigeriaStates } from "./NigeriaStates";
 
 const UserProfile = () => {
 
@@ -15,7 +16,9 @@ const UserProfile = () => {
 
    return(
       <div className="User-profile">
-         <SideBarHeader />
+         <aside className="side fixed">
+            <SideBarHeader />
+         </aside>
          <div className="user-profile-body">
             <UserHeader />
             <div className="user-info">
@@ -28,7 +31,7 @@ const UserProfile = () => {
                   </Col>
                </Row>
             </div>
-            <div>
+            <div className="user-user">
                <Row className="user-detail-card">
                   <Col xl={{size: 5, order: 1,}} lg={{size: 12}} className="user-col-card">
                      <Card className="userCard">
@@ -77,6 +80,93 @@ const UserProfile = () => {
                            <div className="header-title"><h3>My Account</h3></div>
                            <Button className="setting">Setting</Button>
                         </CardHeader>
+                        <CardBody className="form-setting-cardBody">
+                           <CardTitle className="card-title uppercase"> User Information</CardTitle>
+                           <Form className="setting-form mt-4">
+                              <Row form>
+                                 <Col lg="6" md="12">
+                                    <FormGroup>
+                                       <Label for="username" className="label-txt">Username</Label>
+                                       <Input type="text" id="username" name="username" placeholder="Username" className="input-layer" />
+                                    </FormGroup>
+                                 </Col>
+                                 <Col lg="6" md="12">
+                                    <FormGroup>
+                                       <Label for="email" className="label-txt">Email Address</Label>
+                                       <Input type="text" id="email" name="username" placeholder="name@email.com" className="input-layer"/>
+                                    </FormGroup>
+                                 </Col>
+                              </Row>
+                              <Row form  className="mt-3 ">
+                                 <Col lg="6" md="12">
+                                    <FormGroup>
+                                       <Label for="firstname" className="label-txt">Firstname</Label>
+                                       <Input type="text" id="firstname" name="username" placeholder="Username" className="input-layer" />
+                                    </FormGroup>
+                                 </Col>
+                                 <Col lg="6" md="12">
+                                    <FormGroup>
+                                       <Label for="lastname" className="label-txt">Lastname</Label>
+                                       <Input type="text" id="lastname" name="Lastname" placeholder="name@email.com" className="input-layer"/>
+                                    </FormGroup>
+                                 </Col>
+                              </Row>
+                           </Form>
+                           <hr className="rule"/>
+                           <CardTitle className="card-title uppercase">Contact Information</CardTitle>
+                           <Form className="setting-form mt-4">
+                              <Row form>
+                                 <Col>
+                                    <FormGroup>
+                                       <Label for="address" className="label-txt">Address</Label>
+                                       <Input type="text" name="address" placeholder="Address"  className="input-layer"/>
+                                    </FormGroup>
+                                 </Col>
+                              </Row>
+                              <Row form className="mt-3">
+                                 <Col>
+                                    <FormGroup>
+                                       <Label for="city" className="label-txt">City</Label>
+                                       <Input type="select" name="city" id="city" placeholder="City" className="input-layer">
+                                       {NigeriaStates.map((states, key) => {
+                                          return(
+                                             <option key={key}>{states.state}</option>
+                                          )
+                                       })}
+                                       </Input>
+                                    </FormGroup>
+                                 </Col>
+                                 <Col>
+                                    <FormGroup>
+                                       <Label for="country" className="label-txt">Country</Label>
+                                       <Input type="select" name="country" id="country" placeholder="Country" className="input-layer">
+                                       {Country.map((country, key) => {
+                                          return(
+                                             <option key={key}>{country.country}</option>
+                                          )
+                                       })}
+                                       </Input>
+                                    </FormGroup>
+                                 </Col>
+                                 <Col>
+                                    <Label for="postal" className="label-txt">Postal</Label>
+                                    <Input type="number" name="postal" id="postal" placeholder="Postal code" className="input-layer"></Input>
+                                 </Col>
+                              </Row>
+                           </Form>
+                           <hr className="rule"/>
+                           <CardTitle className="card-title uppercase">About Me</CardTitle>
+                           <Form  className="setting-form" >
+                              <FormGroup>
+                                 <Row form>
+                                    <Col lg='12' xl='12'>
+                                       <Label for="aboutme" className="label-txt">About Me</Label>
+                                       <Input type="textarea" name="aboutme" className="input-layer " placeholder="Tell us about yourself"/> 
+                                    </Col>
+                                 </Row>
+                              </FormGroup>
+                           </Form>
+                        </CardBody>
                      </Card>
                   </Col>
                </Row>

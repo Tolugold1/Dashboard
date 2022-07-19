@@ -74,163 +74,202 @@
          }
       }
 
-      .user-detail-card {
+      .user-user {
 
-         margin: 20px;
-         border-radius: 20px;
-         .userCard {
+         margin-bottom: 40px;
+         .user-detail-card {
 
+            margin: 20px;
             border-radius: 20px;
-            .userCardBody {
+            .userCard {
    
-               color: #564c9ad9;
-               .userCardHeader {
-                  display: flex;
+               border-radius: 20px;
+               .userCardBody {
+      
+                  color: #564c9ad9;
+                  .userCardHeader {
+                     display: flex;
+      
+                     .connect-btn {
+                        margin-right: auto;
+                        background-color: #fb6340;
+                        border-radius: 10px;
+                        border: 0;
+                        height: 40px;
+                     }
+                     .connect-btn:hover {
+                        transform: translate(0px, -2px);
+                     }
+                     .userAvatar {
+                        margin-right: auto;
+                        border-radius: 50%;
+                        height: 250px;
+                        width: 250px;
+                        margin-top: -120px;
+                        margin-left: auto;
+                        object-fit: cover;
+                     }
+                     
+                     .userAvatar:hover {
+                        transform: translate(0px, -4px);
+                     }
+                     .message-btn {
+                        margin-left: auto;
+                        background-color: #564c9ad9;
+                        border-radius: 10px;
+                        border: 0;
+                        height: 40px;
+                     }
+                     .message-btn:hover {
+                        transform: translate(0px, -2px);
+                     }
+                  }
+      
+                  .numbers {
+                     align-self: center;
+                     justify-content: center;
+                     margin-top: 50px;
+                     display: flex;
+                     padding: 30px;
+      
+                     .num-text {
+                        max-width: 70px;
+                        margin-right: 20px;
+                        text-align-last: center;
+      
+                        .super-txt {
+                           color:#564c9ad9;
+                        }
+                        .txt {
+                           color: #bfdfdf;
+                        }
+                     }
+                  }
+      
+                  .userName {
+                     display: flex;
+                     align-items: center;
+                     justify-content: center;
+                     margin-top: 10px;
+                     padding: 10px;
+                     text-align-last: center;
+      
+                     .name-txt {
+                        width: 150px;
+                     }
+                  }
+      
+                  .organiztion {
+                     display: flex;
+                     justify-content: center;
+                     text-align-last: center;
+                     .org-txt {
+                        font-weight: bold;
+                     }
+                  }
    
-                  .connect-btn {
-                     margin-right: auto;
-                     background-color: #fb6340;
-                     border-radius: 10px;
-                     border: 0;
-                     height: 40px;
-                  }
-                  .connect-btn:hover {
-                     transform: translate(0px, -2px);
-                  }
-                  .userAvatar {
-                     margin-right: auto;
-                     border-radius: 50%;
-                     height: 250px;
-                     width: 250px;
-                     margin-top: -120px;
-                     margin-left: auto;
-                     object-fit: cover;
-                  }
-                  
-                  .userAvatar:hover {
-                     transform: translate(0px, -4px);
-                  }
-                  .message-btn {
-                     margin-left: auto;
-                     background-color: #564c9ad9;
-                     border-radius: 10px;
-                     border: 0;
-                     height: 40px;
-                  }
-                  .message-btn:hover {
-                     transform: translate(0px, -2px);
-                  }
-               }
-   
-               .numbers {
-                  align-self: center;
-                  justify-content: center;
-                  margin-top: 50px;
-                  display: flex;
-                  padding: 30px;
-   
-                  .num-text {
-                     max-width: 70px;
-                     margin-right: 20px;
+                  .details {
+                     padding: 20px;
+                     text-align: justify;
+                     text-indent:5px;
                      text-align-last: center;
    
-                     .super-txt {
-                        color:#564c9ad9;
+                     .see-link {
+                        background-color: #fb6340;
+                        color: white;
+                        border-radius: 10px;
+                        border: 0;
                      }
-                     .txt {
-                        color: #bfdfdf;
+                     .see-link:hover {
+                        transform: translate(0px, -3px);
+                     }
+                     .seeMore {
+                        display: block;
+                        padding: 10px;
+                     }
+   
+                     .seeLess {
+                        display: none;
                      }
                   }
                }
+            }
    
-               .userName {
+            .form-setting {
+   
+               border-radius: 10px;
+               .form-setting-cardHeader {
                   display: flex;
                   align-items: center;
-                  justify-content: center;
-                  margin-top: 10px;
-                  padding: 10px;
-                  text-align-last: center;
+                  background-color: white;
+                  border-radius: 10px;
    
-                  .name-txt {
-                     width: 150px;
+                  .header-title {
+                     margin-right: auto;
+                     color: #564c9ad9;
+                  }
+                  .setting {
+                     border: 0;
+                     border-radius: 10px;
+                     background-color: #564c9ad9;
+                  }
+   
+                  .setting:hover {
+                     transform: translate(0px, -2px);
                   }
                }
    
-               .organiztion {
-                  display: flex;
-                  justify-content: center;
-                  text-align-last: center;
-                  .org-txt {
+               .form-setting-cardBody {
+                  
+                  .input-layer {
+                     outline: none;
+                     border: 0;
+                     background-color: white;
+                     box-shadow: -2px 2px 22px -2px rgba(68,65,65,0.75);
+                     -webkit-box-shadow: -2px 2px 22px -2px rgba(68,65,65,0.75);
+                     -moz-box-shadow: -2px 2px 22px -2px rgba(68,65,65,0.75);
+                  }
+   
+                  .setting-form {
+                     color: white;
+                     margin-left: 20px;
+                     margin-right: 20px;
+                     margin-top: 15px;
+                     
+                  }
+                  .rule {
+                     margin-top: 50px;
+                     margin-bottom: 50px;
+                  }
+                  
+   
+                  .card-title {
+                     color: #564c9ad9;
                      font-weight: bold;
                   }
                }
-
-               .details {
-                  padding: 20px;
-                  text-align: justify;
-                  text-indent:5px;
-                  text-align-last: center;
-
-                  .see-link {
-                     background-color: #fb6340;
-                     color: white;
-                     border-radius: 10px;
-                     border: 0;
-                  }
-                  .see-link:hover {
-                     transform: translate(0px, -3px);
-                  }
-                  .seeMore {
-                     display: block;
-                     padding: 20px;
-                  }
-
-                  .seeLess {
-                     display: none;
-                  }
-               }
             }
-         }
-
-         .form-setting {
-
-            .form-setting-cardHeader {
-               display: flex;
-               align-items: center;
-
-               .header-title {
-                  margin-right: auto;
-               }
-               .setting {
-                  border: 0;
-                  border-radius: 10px;
-                  background-color: #564c9ad9;
-               }
-
-               .setting:hover {
-                  transform: translate(0px, -2px);
-               }
+   
+   
+   
+   
+            @media (min-width: 1200px) {
+               
             }
-         }
-
-
-
-
-         @media (min-width: 1200px) {
-            
-         }
-
-         @media (min-width: 998px) and (max-width: 1200px) {
-            
-         }
-
-         @media (min-width: 768px) and (max-width: 997px) {
-
-         }
-
-         @media (max-width: 767px) {
-
+   
+            @media (min-width: 998px) and (max-width: 1200px) {
+               
+            }
+   
+            @media (min-width: 768px) and (max-width: 997px) {
+   
+            }
+   
+            @media (max-width: 767px) {
+   
+            }
          }
       }
+      
    }
 }
