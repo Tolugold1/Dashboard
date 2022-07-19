@@ -4,12 +4,12 @@ export const Icons_Icons = [
    {
       Id: 1,
       Icon: mi.MdAccountBox,
-      name: "MdAccountBox"
+      name: "AccountBox"
    },
    {
       Id: 2,
       Icon: mi.MdAddTask,
-      name: "MdAddTask"
+      name: "AddTask"
    },
    {
       Id: 3,
@@ -19,7 +19,7 @@ export const Icons_Icons = [
    {
       Id: 4,
       Icon: mi.MdAssessment,
-      name: "MdAssessment"
+      name: "Assessment"
    },
    {
       Id: 5,
@@ -29,7 +29,7 @@ export const Icons_Icons = [
    {
       Id: 6,
       Icon: mi.MdArrowCircleDown,
-      name: "MdArrowCircleDown"
+      name: "CircleDown"
    },
    {
       Id: 7,
@@ -54,7 +54,7 @@ export const Icons_Icons = [
    {
       Id: 11,
       Icon: mi.MdBatchPrediction,
-      name: "BatchPrediction"
+      name: "Prediction"
    },
    {
       Id: 12,
@@ -64,7 +64,7 @@ export const Icons_Icons = [
    {
       Id: 13,
       Icon: mi.MdCalendarViewDay,
-      name: "CalendarViewDay"
+      name: "ViewDay"
    },
    {
       Id: 14,
@@ -109,12 +109,12 @@ export const Icons_Icons = [
    {
       Id: 22,
       Icon: mi.MdHorizontalSplit,
-      name: "HorizontalSplit"
+      name: "Horizontal"
    },
    {
       Id: 23,
       Icon: mi.MdHotelClass,
-      name: "MdHotelClass"
+      name: "HotelClass"
    },
    {
       Id: 24,
@@ -129,7 +129,7 @@ export const Icons_Icons = [
    {
       Id: 26,
       Icon: mi.MdHourglassFull,
-      name: "HourglassFull"
+      name: "Hourglass"
    },
    {
       Id: 27,
@@ -139,7 +139,7 @@ export const Icons_Icons = [
    {
       Id: 28,
       Icon: mi.MdLabelImportantOutline,
-      name: "ImportantOutline"
+      name: "ImportantOut"
    },
    {
       Id: 29,
@@ -154,22 +154,22 @@ export const Icons_Icons = [
    {
       Id: 31,
       Icon: mi.MdLanguage,
-      name: "MdLanguage"
+      name: "Language"
    },
    {
       Id: 32,
       Icon: mi.MdLeaderboard,
-      name: "MdLeaderboard"
+      name: "MdLeader"
    },
    {
       Id: 33,
       Icon: mi.MdLightbulb,
-      name: "MdLightbulb"
+      name: "MdLight"
    },
    {
       Id: 34,
       Icon: mi.MdLineWeight,
-      name: "MdLineWeight"
+      name: "MdLine"
    },
    {
       Id: 35,
@@ -184,7 +184,7 @@ export const Icons_Icons = [
    {
       Id: 37,
       Icon: mi.MdLockOutline,
-      name: "MdLockOutline"
+      name: "MdLockOut"
    },
    {
       Id: 38,
@@ -204,12 +204,12 @@ export const Icons_Icons = [
    {
       Id: 41,
       Icon: mi.MdNightlightRound,
-      name: "NightlightRound"
+      name: "Nightlight"
    },
    {
       Id: 42,
       Icon: mi.MdOfflineBolt,
-      name: "MdOfflineBolt"
+      name: "MdOffline"
    },
    {
       Id: 43,
@@ -234,7 +234,7 @@ export const Icons_Icons = [
    {
       Id: 47,
       Icon: mi.MdPermPhoneMsg,
-      name: "MdPermPhoneMsg"
+      name: "PhoneMsg"
    },
    {
       Id: 48,

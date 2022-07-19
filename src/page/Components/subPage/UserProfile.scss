@@ -80,10 +80,10 @@
          .user-detail-card {
 
             margin: 20px;
-            border-radius: 20px;
+            border-radius: 10px;
             .userCard {
    
-               border-radius: 20px;
+               border-radius: 10px;
                .userCardBody {
       
                   color: #564c9ad9;
@@ -258,7 +258,9 @@
             }
    
             @media (min-width: 998px) and (max-width: 1200px) {
-               
+               .form-col-setting {
+                  margin-top: 35px;
+               }
             }
    
             @media (min-width: 768px) and (max-width: 997px) {
