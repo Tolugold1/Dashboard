@@ -1,0 +1,45 @@
+.login-header {
+
+   color: white;
+
+   .login-brand {
+      display: flex;
+      align-items: center;
+      color: white;
+      margin-left: 30px;
+
+      .brand-img {
+         margin-right: 15px;
+      }
+   }
+
+   .navigate {
+      margin-left: auto;
+      
+
+      .item {
+         display: flex;
+         align-items: center;
+         margin-right: 40px;
+         justify-content: center;
+         
+         .icon-margin {
+            margin-right: 5px;
+         }
+         .nav-link {
+            color: white;
+         }
+      }
+   }
+
+   @media (max-width: 998px) {
+      .item {
+         display: flex;
+         align-items: center;
+         margin-right: 40px;
+         justify-content: center;
+         padding: 10px;
+      }
+   }
+   
+}

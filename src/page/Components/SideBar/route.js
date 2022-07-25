@@ -34,21 +34,18 @@ export const Paths = [
     
     name: "Tables",
     icon: "fa fa-list-ul text-red",
-    component: Tables,
     layout: "/Tables",
   },
   {
     
     name: "Login",
     icon: "fa fa-space-shuttle text-info",
-    component: Login,
     layout: "/Login",
   },
   {
     
     name: "Register",
     icon: "fa fa-user-circle text-pink",
-    component: Register,
     layout: "/Register",
   },
 ];

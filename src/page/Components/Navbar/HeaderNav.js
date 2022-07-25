@@ -42,10 +42,10 @@ const HeaderNav = () => {
                   </DropdownToggle>
                   <DropdownMenu style={{backgroundColor: 'lightwhite', paddingRight: '70px', borderRadius: '10px'}} end>
                      <DropdownItem header tag='h4'>Welcome!</DropdownItem>
-                     <DropdownItem className='mb-3'><Link to="/UserProfile"><i className='fa fa-user ' /> <span> My profile </span></Link></DropdownItem>
-                     <DropdownItem className='mb-3'><i className='fa fa-cog' /> <span> Settings </span></DropdownItem>
-                     <DropdownItem className='mb-3'><i className='fa fa-calendar' /> <span> Activity</span></DropdownItem>
-                     <DropdownItem className='mb-3'><i className='fa fa-life-ring' /> <span> support</span></DropdownItem>
+                     <Link to="/UserProfile"><DropdownItem className='mb-3'><i className='fa fa-user ' /> <span> My profile </span></DropdownItem></Link>
+                     <Link to="/UserProfile/#settings"><DropdownItem className='mb-3'><i className='fa fa-cog' /> <span> Settings </span></DropdownItem></Link>
+                     <Link to="/UserProfile/#settings"><DropdownItem className='mb-3'><i className='fa fa-calendar' /> <span> Activity</span></DropdownItem></Link>
+                     <Link to="/UserProfile"><DropdownItem className='mb-3'><i className='fa fa-life-ring' /> <span> support</span></DropdownItem></Link>
                      <DropdownItem divider/>
                      <DropdownItem href='#' className='mb-3' onClick={(e) => {e.preventDefault()}}><i className='fa fa-sign-out'/> <span> Logout</span></DropdownItem>
                   </DropdownMenu>

@@ -14,6 +14,13 @@ const UserProfile = () => {
       setSeeMore(!seeMore);
    }
 
+   const message = () => {
+      alert("Message support is disable for now");
+   }
+   const connect = () => {
+      alert("This feature is currently not available");
+   }
+
    return(
       <div className="User-profile">
          <aside className="side fixed">
@@ -27,7 +34,7 @@ const UserProfile = () => {
                      <h1 className="greeting-text">Hello Tolu</h1>
                      <p className="text">This is your profile page. You can see the progress you've made with your work and manage your projects or assigned tasks.
                      </p>
-                     <Button className="edit-profile-btn">Edit profile</Button>
+                     <Button className="edit-profile-btn" href="#settings" tag="a">Edit profile</Button>
                   </Col>
                </Row>
             </div>
@@ -37,9 +44,9 @@ const UserProfile = () => {
                      <Card className="userCard">
                         <CardBody className="userCardBody">
                            <div className="userCardHeader">
-                              <Button className="connect-btn">Connect</Button>
+                              <Button className="connect-btn" onClick={connect}>Connect</Button>
                               <img src={require("./table-avatar/IMG_20220703_080504_010.jpg")} alts="..." className="userAvatar"></img>
-                              <Button className="message-btn">Message</Button>
+                              <Button className="message-btn" onClick={message}>Message</Button>
                            </div>
 
                            <div className="numbers">
@@ -61,20 +68,20 @@ const UserProfile = () => {
                               </div>
                            </div>
                            <div className="organiztion">
-                              <div className="align-items-center"><h6 className="org-txt">Solution Manager - Creative Tim Officer</h6>
+                              <div className="align-items-center"><h6 className="org-txt">Solution Manager - Frontend Developer</h6>
                               <h5>University of Computer Science</h5></div>
                            </div>
                            <hr/>
                            <div className="details">
                               <h4>Tolu Gold - Frontend web developer with reactstrap, Javascript, and reactjs. Also a C and python programmer. Studying at Ekiti state university.</h4>
                               <Button className="see-link" onClick={toggleSeeMore} >See More!</Button>
-                              <h4 className={seeMore ? "seeMore" : "seeLess"}>Tolu Gold - Skillsets: C programming language, python programming language and web developer.</h4>
+                              <h4 className={seeMore ? "seeMore" : "seeLess"}>Tolu Gold - Skillsets: C programming language, python programming language and frontend developer.</h4>
                            </div>
                         </CardBody>
                      </Card>
                   </Col>
 
-                  <Col className="form-col-setting" lg={{ size: 12}} xl={{size: 7}}>
+                  <Col className="form-col-setting" lg={{ size: 12}} xl={{size: 7}} id="settings">
                      <Card className="form-setting">
                         <CardHeader className="form-setting-cardHeader">
                            <div className="header-title"><h3>My Account</h3></div>
@@ -101,13 +108,13 @@ const UserProfile = () => {
                                  <Col lg="6" md="12">
                                     <FormGroup>
                                        <Label for="firstname" className="label-txt">Firstname</Label>
-                                       <Input type="text" id="firstname" name="username" placeholder="Username" className="input-layer" />
+                                       <Input type="text" id="firstname" name="username" placeholder="Firstname" className="input-layer" />
                                     </FormGroup>
                                  </Col>
                                  <Col lg="6" md="12">
                                     <FormGroup>
                                        <Label for="lastname" className="label-txt">Lastname</Label>
-                                       <Input type="text" id="lastname" name="Lastname" placeholder="name@email.com" className="input-layer"/>
+                                       <Input type="text" id="lastname" name="Lastname" placeholder="Lastname" className="input-layer"/>
                                     </FormGroup>
                                  </Col>
                               </Row>
