@@ -22,8 +22,8 @@ const Register = () => {
             </div>
             <div className="welcome-text" id="policy">
                <h2 className="text-head">welcome!</h2>
-               <h4 className="sub-head"> Register here!!!</h4>
-               <p className="text">Do you have an account opened already on this dashboard? if yes, kindly log into the account with this awesome form below. Else, navigate to the register page to create an account.</p> <RiBallPenFill style={{width: '40px', height: '54px', color: "white"}}/>
+               <h4 className="sub-head" style={{color: "white", fontSize: "24px"}}> Register here!!!</h4>
+               <p className="text">Do you have an account opened already on this dashboard? if no, kindly open an account with this awesome form below. Else, navigate to the login page to sign into your account.</p> <RiBallPenFill style={{width: '40px', height: '54px', color: "white"}}/>
             </div>
          </div>
          <div className="login-bottom">
@@ -46,7 +46,9 @@ const Register = () => {
                            <Label htmlFor="password" className="txt-label"><MdEmail className="label-icon" /> Password</Label>
                            <Input type="password" id="password" name="password" placeholder="password" className="input-layer-style"/>
                            <FormText color="muted" style={{fontSize: "16px"}}><strong>Password must be strong, it must be Alphanumeric with at least a symbol</strong></FormText>
-                           <Label className="check-checkbox" check>
+                        </FormGroup>
+                        <FormGroup className="check-checkbox" check>
+                           <Label style={{fontSize: "23px"}} check>
                               <Input type="checkbox" id="remember-me" className="remember">{' '}
                               </Input>
                               <em>I agree with <a href="#policy" style={{color: "#564c9ad9"}}>private policy</a></em>

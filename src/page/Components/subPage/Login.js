@@ -21,7 +21,7 @@ const Login = () => {
             </div>
             <div className="welcome-text">
                <h2 className="text-head">welcome!</h2>
-               <p className="text">Do you have an account opened already on this dashboard? if yes, kindly navigate to login page to sign in. Else, register with the awesome form below.</p>
+               <p className="text">Do you have an account opened already on this dashboard? if no, kindly navigate to the register page to create an account, else, login with the awesome form below.</p>
             </div>
          </div>
          <div className="login-bottom">
@@ -41,11 +41,13 @@ const Login = () => {
                            <Input type="email" id="email" name="email" placeholder="email" className="input-layer-style"/>
                            <Label htmlFor="password" className="txt-label"><MdEmail className="label-icon" /> Password</Label>
                            <Input type="password" id="password" name="password" placeholder="password" className="input-layer-style"/>
-                           <Label className="check-checkbox" check>
+                           <FormGroup className="check-check" check>
+                           <Label className="check-checkbox" style={{fontSize: "23px"}} check>
                               <Input type="checkbox" id="remember-me" className="remember">{' '}
                               </Input>
                               Remember me
                            </Label>
+                        </FormGroup>
                         </FormGroup>
                         <FormGroup className="field" check row>
                            <Col sm={{offset: 4}}>

@@ -21,19 +21,19 @@ const LoginHeader = () => {
                <Nav className="navigate" navbar>
                   <NavItem className='item'>
                      <IoPlanetSharp className='icon-margin'/>
-                     <Link to='/'>Dashboard</Link>
+                     <Link to='/' className="link-nav">Dashboard</Link>
                   </NavItem>
                   <NavItem className='item'>
                      <FaUserCircle className='icon-margin'/>
-                     <Link to='/Register'>Register</Link>
+                     <Link to='/Register' className="link-nav">Register</Link>
                   </NavItem>
                   <NavItem className='item'>
                      <RiKey2Fill className='icon-margin'/>
-                     <Link to='/Login'>Login</Link>
+                     <Link to='/Login' className="link-nav">Login</Link>
                   </NavItem>
                   <NavItem className='item'>
                      <FaUser className='icon-margin'/>
-                     <Link to='/UserProfile'>Profile</Link>
+                     <Link to='/UserProfile' className="link-nav">Profile</Link>
                   </NavItem>
                </Nav>
             </Collapse>
